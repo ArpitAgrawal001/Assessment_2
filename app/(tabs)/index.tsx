@@ -45,7 +45,7 @@ const HomeScreen: React.FC = () => {
         {/* Banners */}
         <View style={styles.bannerContainer}>
           <Image
-            source={{ uri: 'https://via.placeholder.com/300x100.png?text=15%+OFF+All+Items' }} // replace with your banner image URL
+            source={{ uri: '../../assets/images/banner.png' }} // replace with your banner image URL
             style={styles.banner}
           />
         </View>
@@ -111,7 +111,7 @@ const HomeScreen: React.FC = () => {
 
       {/* Bottom Navigation */}
       <View style={styles.bottomNav}>
-      <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('index')}>
+      <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('')}>
           <FontAwesome name="home" size={24} color="black" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('wishlist')}>
